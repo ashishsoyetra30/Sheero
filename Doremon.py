@@ -27,7 +27,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("I am Jarvis Sir! Tell me how may I help you")    
+    speak("I am Doremon Nobita! I won't help you this time or maybe i will do if you treat me up with doracake...if yes then go on what do you want")    
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -98,6 +98,9 @@ if __name__ == "__main__":
             codePath = "C:\\Users\\ashis\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code"
             os.startfile(codePath)
 
+        elif 'quit' in query:
+            exit(1)
+        
         elif 'email to harry' in query:
             try:
                 speak("What should I say?")
@@ -108,4 +111,4 @@ if __name__ == "__main__":
 
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")        
+                speak("Sorry my friend ashu bhai. I am not able to send this email")        
